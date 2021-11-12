@@ -1,4 +1,4 @@
-Welcome to SunStore.This is a sunglass selling related website. Here you can buy a stylish sunglass. live-site link: , server-live-site link:https://arcane-harbor-29981.herokuapp.com/.
+Welcome to SunStore.This is a sunglass selling related website. Here you can buy a stylish sunglass. live-site link:https://sunstore-368e4.web.app/ , server-live-site link:https://arcane-harbor-29981.herokuapp.com/.
 
 On this website you can:
 
@@ -52,4 +52,4 @@ Step-7:If your  Admin
 3.You can manage all products data.
 
 server code:https://github.com/programming-hero-web-course-4/niche-website-server-side-SraboniAkhter
-client-site code:
+client-site code:https://github.com/programming-hero-web-course-4/niche-website-client-side-SraboniAkhter
