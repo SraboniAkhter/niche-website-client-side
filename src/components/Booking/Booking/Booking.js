@@ -27,8 +27,8 @@ const Booking = () => {
     //  console.log(data);
     const [productDetails,setProductDetails] = useState({});
       useEffect(() => {
-         fetch(`https://arcane-harbor-29981.herokuapp.com/products/${productId}`)
-        //  fetch(`http://localhost:5000/products/${productId}`)
+          fetch(`https://arcane-harbor-29981.herokuapp.com/products/${productId}`)
+          // fetch(`http://localhost:5000/products/${productId}`)
         .then(res => res.json())
         .then(data =>setProductDetails(data))
     },[])
@@ -60,8 +60,8 @@ const Booking = () => {
   }
     
    const handleSubmitData = () => {
-     axios.post('https://arcane-harbor-29981.herokuapp.com/bookings',orderData)
-    //  axios.post('http://localhost:5000/bookings',orderData)
+      axios.post('https://arcane-harbor-29981.herokuapp.com/bookings',orderData)
+      // axios.post('http://localhost:5000/bookings',orderData)
     .then(res => {
         if(res.insertedId) {
             alert('added successfully');

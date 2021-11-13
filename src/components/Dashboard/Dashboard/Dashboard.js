@@ -42,33 +42,28 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <Divider />
-<Link to={`${url}/addReview`}>Add Review</Link>
-<br />
-<Link to={`${url}/myOrder`}>My Order</Link>
-<br />
-<Link to={`${url}/payment`}>Payment</Link> <br />
-{admin && <Box><Link to={`${url}/manageAllOrder`}>Manage All Order</Link> <br />
+
+{admin? 
+<Box>
+<Link to={`${url}/manageAllOrder`}>Manage All Order</Link> <br />
 <Link to={`${url}`}>Dashboard</Link> <br />
 <Link to={`${url}/makeAdmin`}> Make Admin</Link> <br />
 <Link to={`${url}/addProduct`}> Add Product</Link> <br />
 <Link to={`${url}/manageProduct`}>Manage Product</Link>
 </Box>
+      :
+<Box>
+<Link to={`${url}/addReview`}>Add Review</Link>
+<br />
+<Link to={`${url}/myOrder`}>My Order</Link>
+<br />
+<Link to={`${url}/payment`}>Payment</Link> <br />
+
+</Box>
 }
 {user?.email && <li>
           <button onClick={logOut} className="nav-link active ms-5 btn btn-info text-white">logout</button>
         </li>}
-    <br />
-    <Link to="/"><button class="btn btn-warning text-white">Back to Home</button></Link> <br />
-      {/* <List>
-        {['Inbox', 'Starred', 'Logout'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List> */}
     </div>
   );
 
